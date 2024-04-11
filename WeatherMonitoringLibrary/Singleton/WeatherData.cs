@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using WeatherMonitoringLibrary.Interfaces;
 
-namespace WeatherMonitoringLibrary
+namespace WeatherMonitoringLibrary.Singleton
 {
     /// <summary>
     /// Implements a singleton that simulates weather data generation and notifies registered observers with the new data.
+    /// Name: Avinash Nagaiah
     /// </summary>
     
     public class WeatherData
@@ -63,8 +65,5 @@ namespace WeatherMonitoringLibrary
         }
     }
 
-    public interface IDisplay
-    {
-        void Display(float temperature, float windSpeed, int airQualityIndex);
-    }
+   
 }
